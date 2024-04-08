@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>621</width>
+    <height>392</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>0</y>
+      <width>601</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QTextEdit" name="Note_edit"/>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="List_lb">
+         <property name="text">
+          <string>Список заміток</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QListWidget" name="List_name"/>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QPushButton" name="Create_pb">
+           <property name="styleSheet">
+            <string notr="true">font: 8pt &quot;Fixedsys&quot;;
+background-color: rgb(0, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>Створити замітку</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Del_pb">
+           <property name="styleSheet">
+            <string notr="true">font: 8pt &quot;Fixedsys&quot;;
+background-color: rgb(255, 0, 0);</string>
+           </property>
+           <property name="text">
+            <string>Видалити замітку</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Save_pb">
+         <property name="styleSheet">
+          <string notr="true">font: 8pt &quot;Fixedsys&quot;;
+background-color: rgb(255, 255, 0);</string>
+         </property>
+         <property name="text">
+          <string>Зберегти замітку</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="Tag_lb">
+         <property name="text">
+          <string>Список тегів</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QListWidget" name="List_tag"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="Tag_ledit">
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#dbdbdb;&quot;&gt;Введіть тег...&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="whatsThis">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Введіть тег&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="text">
+          <string extracomment="Введіть тег..."/>
+         </property>
+         <property name="readOnly">
+          <bool>false</bool>
+         </property>
+         <property name="placeholderText">
+          <string>Введіть тег...</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QPushButton" name="Addtag_pb">
+           <property name="styleSheet">
+            <string notr="true">font: 8pt &quot;Fixedsys&quot;;
+background-color: rgb(0, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>Додати тег</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Deletetag_pb">
+           <property name="styleSheet">
+            <string notr="true">font: 8pt &quot;Fixedsys&quot;;
+background-color: rgb(255, 0, 0);</string>
+           </property>
+           <property name="text">
+            <string>Відкріпити тег</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Searchtag_pb">
+         <property name="styleSheet">
+          <string notr="true">font: 8pt &quot;Fixedsys&quot;;
+background-color: rgb(255, 255, 0);</string>
+         </property>
+         <property name="text">
+          <string>Шукати замітку по тегу</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>621</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Замітки</string>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
